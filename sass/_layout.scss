@@ -1,0 +1,77 @@
+.header {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  padding: 30px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  margin-right: 6rem;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hero {
+  margin-top: 6rem;
+  margin-bottom: 25rem;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10rem;
+
+  flex-basis: 45%;
+}
+
+.greeting {
+  font-family: var(--primary-font);
+}
+
+.about {
+  background-color: var(--color-grey-light-1);
+  color: #021994;
+  font-weight: 600;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills {
+  font-family: var(--primary-font);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+  color: var(--color-grey-light-1);
+  font-weight: 600;
+  padding: 3rem;
+}
+
+.contact {
+  background-color: var(--color-primary);
+  color: var(--color-grey-light-1);
+  padding-bottom: 3rem;
+
+  &__header {
+    padding-top: 2.5rem;
+  }
+}
