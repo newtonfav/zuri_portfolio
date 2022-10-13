@@ -24,11 +24,18 @@
 
 .hero {
   margin-top: 6rem;
-  margin-bottom: 25rem;
+  padding-bottom: 25rem;
+  padding-left: 2.5rem;
 
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+    padding-bottom: 10rem;
+  }
 }
 
 .profile {
@@ -37,6 +44,16 @@
   margin-right: 10rem;
 
   flex-basis: 45%;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-basis: 0;
+    padding-left: 3rem;
+    margin-right: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding-bottom: 4rem;
+  }
 }
 
 .greeting {
